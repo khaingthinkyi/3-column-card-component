@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  figure{
+    line-height: 0;
+  }
+  img{
+    width: 100%;
+  }
+  a{
+    text-decoration: none; 
+    cursor: pointer;
+  }
+  body{
+    background-color: hsl(221, 100%, 96%);
+    font-size: 15px;
+  }
+  .three_column_card{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 100px auto 50px;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  .three_column_card .cards{
+    padding: 62px;
+    box-sizing: border-box;
+  }
+  .three_column_card .cards .card_title{
+    font-family: 'Big Shoulders Display', sans-serif;
+    margin: 30px 0;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+  }
+  .three_column_card .cards .desc_txt{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: hsla(0, 0%, 100%, 0.75);
+    min-height: 200px;
+  }
+  .three_column_card .sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .three_column_card .suvs{
+    background-color: hsl(184, 100%, 22%);
+  }
+  .three_column_card .luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .three_column_card .cards .learn_more_btn{
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 40px;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 30px;
+    margin-top: 80px;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .three_column_card .cards .learn_more_btn:hover{
+    background-color: transparent;
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    color: hsl(0, 0%, 95%);
+    opacity: 0.5;
+  }
+  .three_column_card .sedans .learn_more_btn{
+    color: hsl(31, 77%, 52%);
+  }
+  .three_column_card .suvs .learn_more_btn{
+    color: hsl(184, 100%, 22%);
+  }
+  .three_column_card .luxury .learn_more_btn{
+    color: hsl(179, 100%, 13%);
+  }
+  .attribution { font-size: 20px; text-align: center; margin-bottom: 30px; line-height: 30px;}
+  .attribution a { color: hsl(228, 45%, 44%);}
+  @media (max-width: 768px){
+    body::-webkit-scrollbar {
+      display: none;
+    }
+    body{
+      padding: 0 calc(40 / 750 * 100vw);
+      box-sizing: border-box;
+      font-size: calc(30 / 750 * 100vw);
+    }
+    .three_column_card{
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: calc(100 / 750 * 100vw) calc(40 / 750 * 100vw) calc(50 / 750 * 100vw);
+      box-sizing: border-box;
+    }
+    .three_column_card .cards{
+      padding: calc(80 / 750 * 100vw);
+    }
+    .three_column_card .cards .card_title{
+      margin: calc(60 / 750 * 100vw) 0;
+      font-size: calc(40 / 750 * 100vw);
+      line-height: calc(50 / 750 * 100vw);
+    }
+    .three_column_card .cards .desc_txt{
+      font-size: calc(30 / 750 * 100vw);
+      line-height: calc(40 / 750 * 100vw);
+      min-height: unset;
+    }
+    .three_column_card .sedans{
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    .three_column_card .luxury{
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .three_column_card .cards .learn_more_btn{
+      padding: calc(10 / 750 * 100vw) calc(40 / 750 * 100vw);
+      border-radius: calc(30 / 750 * 100vw);
+      margin-top: calc(100 / 750 * 100vw);
+      font-size: calc(24 / 750 * 100vw);
+      line-height: calc(34 / 750 * 100vw);
+    }
+    .attribution { 
+      font-size: calc(30 / 750 * 100vw);
+      line-height: calc(40 / 750 * 100vw);
+      margin-bottom: calc(40 / 750 * 100vw);
+    }
+    }
